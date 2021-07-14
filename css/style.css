@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Google ponts */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container,
+.banner_container {
+    width: 1160px;
+}
+
+/* common css style */
+
+
+
+#banner {
+    background-color: #2D25A0;
+    height: 100vh;
+
+}
+
+.banner_container {
+    margin: auto;
+}
+
+.banner-football {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    padding-top: 107px;
+    padding-right: 75px;
+}
+
+.banner-text a {
+    color: #fff;
+    padding: 10px 24px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    margin-top: 17px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all linear 0.3s;
+}
+
+.banner-text a:hover {
+    border: 1px solid #fff;
+    background-color: transparent;
+
+}
+
+.banner-text a i {
+    margin-left: 10px;
+}
+
+.banner-thumbnail {
+    padding-top: 125px;
+}
+
+
+
+
+
+.banner-thumbnail img {
+    width: 556px;
+    height: 438px;
+    margin-top: 10px;
+    animation: banneranimate 7s linear infinite;
+}
+
+@keyframes banneranimate {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    25% {
+        transform: translateY(10px);
+
+    }
+
+    50% {
+        transform: translateY(-10px);
+
+    }
+
+    75% {
+        transform: translateY(10px);
+
+    }
+
+    100% {
+        transform: translateY(-10px);
+
+    }
+}
+
+/* plyers part */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 17px 30px;
+    margin: 75px 0;
+}
+
+.players-item {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.players-item img {
+    width: 336px;
+    height: 256px;
+}
+
+.players-item h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.players-item p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6C6C6C;
+    padding-right: 65px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Highlight part start */
+.all-highlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 128px;
+}
+
+.highlight-text {
+    align-items: center;
+}
+
+.highlight-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 140px;
+    padding-right: 110px;
+}
+
+.highlight-text p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6C6C6C;
+    padding-right: 215px;
+}
+
+.highlight-text a {
+    color: #fff;
+    padding: 10px 24px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    margin-top: 17px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all linear 0.3s;
+}
+
+.highlight-text a:hover {
+    border: 1px solid #E02C6D;
+    background-color: transparent;
+    color: #E02C6D;
+
+}
+
+.highlight-text a i {
+    margin-left: 10px;
+}
+
+.highlights-thumbnail {
+    margin-top: 90px;
+}
+
+.highlights-thumbnail img {
+    width: 567px;
+    height: 427px;
+}
+
+/* counter */
+#counter {
+    background-color: #474651;
+    padding: 50px 0;
+    margin-bottom: 75px;
+}
+
+
+
+.counters {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter-item h2 {
+    font-size: 45px;
+    color: #fff;
+}
+
+.counter-item span {
+    color: #ffcc33;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+
+
+/* logo part */
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 484px;
+    height: 110px;
+}
+
+/* social part */
+.social {
+    text-align: center;
+}
+
+.social ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social ul li a i {
+    color: #969BAB;
+    width: 32px;
+    height: 32px;
+    background-color: #E7E7E8;
+    line-height: 32px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* footer part */
+
+
+.copy-right {
+    text-align: center;
+    margin-bottom: 63px;
+}
+
+.copy-right p {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+
+
+/* responsive part */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+
+    }
+
+    #banner {
+        height: 770px;
+    }
+
+    .banner_container {
+        width: 100%;
+    }
+
+    .banner-football {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-left: 30px;
+
+    }
+
+
+    .banner-text h1 {
+        font-size: 50px;
+        padding-right: 107px;
+        padding-top: 90px;
+    }
+
+    .banner-thumbnail {
+        padding-top: 70px;
+    }
+
+    .banner-thumbnail img {
+        width: 329px;
+        height: 260px;
+
+    }
+
+    /*player part  */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .players-item {
+        width: 338px;
+        margin: auto;
+    }
+
+    /* highlight part */
+    .all-highlight {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 90px;
+    }
+
+    .highlight-text,
+    .highlights-thumbnail {
+        width: 338px;
+        margin: auto;
+    }
+
+    .highlight-text h2 {
+        font-size: 30px;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+
+    .highlight-text p {
+        padding-right: 35px;
+        margin-top: 10px;
+    }
+
+    .highlight-text a {
+        margin-bottom: 30px;
+    }
+
+
+    .highlights-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* counter part */
+    #counter {
+        padding: 50px 30px;
+    }
+
+    .counters {
+        flex-direction: column;
+    }
+
+    .counter-item {
+        margin: 30px 0;
+    }
+
+    .logo img {
+        width: 275px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+
+    }
+
+    #banner {
+        height: 770px;
+    }
+
+    .banner_container {
+        width: 100%;
+    }
+
+
+    .banner-football {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-left: 30px;
+
+    }
+
+
+    .banner-text h1 {
+        font-size: 50px;
+        padding-right: 107px;
+        padding-top: 90px;
+    }
+
+    .banner-thumbnail {
+        padding-top: 70px;
+    }
+
+    .banner-thumbnail img {
+        width: 329px;
+        height: 260px;
+
+    }
+
+
+    /* players part */
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .players-item {
+        width: 366px;
+
+    }
+}
